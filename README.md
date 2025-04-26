@@ -1,6 +1,6 @@
-# Drone Control and System Identification Project
+# Drone Control and System Identification using SINDy algorithm
 
-This project implements a comprehensive system for drone control, pose estimation, and system identification using the Tello drone. The system is built using Python and integrates computer vision, control systems, and machine learning components.
+Implements a comprehensive system for drone control, pose estimation, and system identification using the Tello drone
 
 ## Project Structure
 
