@@ -55,10 +55,24 @@ The project is organized into several main components:
 │   ├── pose_estimation/
 │   ├── system_identification/
 │   └── utils/
+├── sample_data/
+│   ├── sample_input.csv
+│   ├── sample_output.csv
+│   └── sample_calibration.npz
 ├── calibration_data/
 ├── input_data/
 └── output_data/
 ```
+
+## Sample Data
+
+The repository includes sample data in the `sample_data/` directory:
+
+- `sample_input.csv`: Sample control input data for the drone
+- `sample_output.csv`: Sample pose estimation data
+- `sample_calibration.npz`: Sample camera calibration data for the Tello drone
+
+These files can be used to test the system identification pipeline without requiring a physical drone.
 
 ## Installation
 
@@ -111,7 +125,7 @@ The project is organized into several main components:
    ```python
    from src.system_identification.sindy_pipeline import SINDyPipeline
    pipeline = SINDyPipeline()
-   pipeline.run_pipeline("output_data/pose_estimation_*.csv")
+   pipeline.run_pipeline("sample_data/sample_output.csv")
    ```
 
 ## Control Mapping
